@@ -1,2 +1,2 @@
 # BlueRangerPhotography1
-Blue Ranger Photography 
+Blue Ranger LLC photography dynamic webpage (in progress!)
