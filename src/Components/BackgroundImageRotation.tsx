@@ -1,5 +1,5 @@
 import { Image } from "@chakra-ui/react";
-import def, { bgImageList } from "../assets/BackgroundImageList";
+import { bgImages } from "../assets/BackgroundImageList";
 import { ReactNode } from "react";
 
 interface props {
@@ -8,14 +8,12 @@ interface props {
 }
 
 const BackGroundImage = ({ img }: props) => {
-  let idx = 0;
-
-  idx = (idx + 1) % bgImageList.length;
+  let random = (Math.random() * 100) % bgImages.length;
   setInterval(() => {
-    img = bgImageList[idx];
+    img = bgImages[random];
   }, 5000);
 
-  return <Image src={img} />;
+  return <Image src={`${img}`} opacity={"75%"} />;
 };
 
 export default BackGroundImage;

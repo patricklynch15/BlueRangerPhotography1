@@ -6,9 +6,10 @@ const ImageTile = () => {
     <Image
       key={`${img1}`}
       src={`${img1}`}
-      alt="Noah"
+      alt={`${img1}`}
       objectFit={"contain"}
       boxSize={"100%"}
+      align={"center"}
     />
   );
 };
