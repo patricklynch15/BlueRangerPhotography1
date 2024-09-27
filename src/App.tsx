@@ -22,7 +22,13 @@ function App() {
       fontWeight="bold"
       columns={4}
     >
-      <GridItem pl="2" bg="orange.300" area={"header"} marginTop={"auto"}>
+      <GridItem
+        pl="2"
+        bg="orange.300"
+        area={"header"}
+        // pos={"fixed"}
+        width={"auto"}
+      >
         <NavBar menuItems={menuItems} />
       </GridItem>
       <GridItem pl="2" area={"main"} height={"700px"}>
